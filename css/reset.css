@@ -1,0 +1,44 @@
+html {
+    /* 16px을 1px로 만듦 */
+    font-size: 6.25%;
+}
+
+@media (max-width:768px) {
+    html {
+        /*width 가 390인 디바이스를 기준으로 폰트사이즈를 pc*/
+        /*390 size에 맞춤 (16/390*6.25/100) 디자인 사이즈*/
+        font-size: 0.25641025641vw;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+body {
+    font-size: 16rem;
+    line-height: 1;
+}
+
+.inner {
+    max-width: 1200rem;
+    margin: 0 auto;
+    padding: 0 15rem;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.r_inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
